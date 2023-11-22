@@ -4,17 +4,25 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 
+<<<<<<< Updated upstream
 public class Card : ScriptableObject
 {
     public Card(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType)
+=======
+//[CreateAssetMenu(fileName = "New card", menuName = "Card")]
+public class Card : MonoBehaviour 
+>>>>>>> Stashed changes
     {
-        valueDice = pValueD;
-        secondValueDice = pSecondValue;
-        valueMoney = pValueM;
-        nameCard = pName;
-        onlyCard = pOnlyCard;
-        type = pType;
+    public Card(CardData pData)
+    {
+        data = pData;
     }
+
+    protected CardData data;
+    protected Player owner;
+
+    public typeCard type;
+
     public enum typeCard
     {
         wheat,
@@ -26,17 +34,6 @@ public class Card : ScriptableObject
         factory,
         fruits
     }
-
-    public string nameCard;
-    protected Player owner;
-    public int valueMoney;
-    public int valueDice;
-    public int secondValueDice;
-    //public int numCard;
-    public int maxNumCard;
-    public bool onlyCard;
-
-    public typeCard type;
 
 
     void Start()

@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class OrangeCard : Card
 {
-    public OrangeCard(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType) : base(pName, pValueM, pValueD, pSecondValue, pOnlyCard, pType)
+    public OrangeCard(CardData pData) : base(pData)
     {
-        valueDice = pValueD;
-        secondValueDice = pSecondValue;
-        valueMoney = pValueM;
-        nameCard = pName;
-        onlyCard = pOnlyCard;
-        type = pType;
+        data = pData;
     }
 
     bool obtained;
@@ -31,19 +26,19 @@ public class OrangeCard : Card
     {
         if (obtained)
         {
-            if (nameCard == "Gare")
+            if (data.nameCard == "Gare")
             {
 
             }
-            if (nameCard == "Centre Commercial")
+            if (data.nameCard == "Centre Commercial")
             {
 
             }
-            if (nameCard == "Parc d'attractions")
+            if (data.nameCard == "Parc d'attractions")
             {
 
             }
-            if (nameCard == "Tour radio")
+            if (data.nameCard == "Tour radio")
             {
 
             }
