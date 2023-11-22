@@ -3,15 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
-<<<<<<< Updated upstream
-public class Card : ScriptableObject
-{
-    public Card(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType)
-=======
-//[CreateAssetMenu(fileName = "New card", menuName = "Card")]
 public class Card : MonoBehaviour 
->>>>>>> Stashed changes
     {
     public Card(CardData pData)
     {
