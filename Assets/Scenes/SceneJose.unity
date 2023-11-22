@@ -153,21 +153,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6d4a6db23b0dd074786c3123a4f5a812, type: 2}
+  - {fileID: 11400000, guid: 3e03a5b2f542a6149b5fbb2f9711e534, type: 2}
+  - {fileID: 11400000, guid: 0d6f6906148561543a05268f0c5e125b, type: 2}
+  - {fileID: 11400000, guid: 46a3016cb01469f498870d0b63b4915a, type: 2}
+  - {fileID: 11400000, guid: e0f25488168f26940aec4b62adedc236, type: 2}
+  - {fileID: 11400000, guid: f1fe3c703897b774eae4dde0a6e35883, type: 2}
+  - {fileID: 11400000, guid: c2c77da3eef9cb445a8de5e64b42dc7a, type: 2}
+  - {fileID: 11400000, guid: b5d596805b717394eaa39755ada0e877, type: 2}
+  - {fileID: 11400000, guid: 4c8895470eaa87242883590f815ef970, type: 2}
+  - {fileID: 11400000, guid: 0252d96b6cbb552428c1d19bc98ac6b7, type: 2}
+  - {fileID: 11400000, guid: d067b9fdf5538594091c7d391c11fcc0, type: 2}
+  - {fileID: 11400000, guid: df28363a302dfe54cbb6d801ff8f44d1, type: 2}
+  - {fileID: 11400000, guid: ad88040f6cd87504f91ae0a093974211, type: 2}
+  - {fileID: 11400000, guid: 1e830e198b43e054984a2c1ca9d54e46, type: 2}
+  - {fileID: 11400000, guid: 0df9b4cc311dc09489acee86f0680648, type: 2}
   champsDeBle: {fileID: 0}
   ferme: {fileID: 0}
   boulangerie: {fileID: 0}
