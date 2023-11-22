@@ -77,18 +77,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
-Assets/Textures/MiniVille Carte PlaceHolder/Verger.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Superette.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Stade.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Restaurant.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Mine.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Marche de fruit et legumes.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Fromagerie.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Foret.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Ferme.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Fabrique de Meuble.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Champs de ble.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Chaine de tv.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Centre D'affaire.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Cafe.png.meta
-Assets/Textures/MiniVille Carte PlaceHolder/Boulangerie.png.meta
+
