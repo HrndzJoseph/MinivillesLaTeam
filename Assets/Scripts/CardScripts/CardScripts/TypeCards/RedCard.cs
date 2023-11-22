@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class RedCard : Card
 {
-    public RedCard(CardData pData) : base(pData)
+    public RedCard(CardData pData, typeCard pType) : base(pData, pType)
     {
         data = pData;
+        type = pType;
     }
     void Start()
     {
