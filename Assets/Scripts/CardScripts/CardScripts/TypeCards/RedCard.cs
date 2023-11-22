@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class RedCard : Card
 {
-    public RedCard(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType) : base(pName, pValueM, pValueD, pSecondValue, pOnlyCard, pType)
+    public RedCard(CardData pData) : base(pData)
     {
-        valueDice = pValueD;
-        secondValueDice = pSecondValue;
-        valueMoney = pValueM;
-        nameCard = pName;
-        onlyCard = pOnlyCard;
-        type = pType;
+        data = pData;
     }
     void Start()
     {
@@ -26,12 +21,12 @@ public class RedCard : Card
 
     public override void Effect()
     {
-        if (nameCard == "Café")
+        if (data.nameCard == "Café")
         {
             GameManager.GetInstance().activePlayer.money--;
             /*owner.money++;*/
         }
-        if (nameCard == "Restaurant")
+        if (data.nameCard == "Restaurant")
         {
             GameManager.GetInstance().activePlayer.money -= 2;
             /*owner.money += 2;*/

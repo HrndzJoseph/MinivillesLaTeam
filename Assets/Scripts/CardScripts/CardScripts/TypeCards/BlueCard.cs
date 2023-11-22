@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class BlueCard : Card
 {
-    public BlueCard(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType) : base(pName, pValueM, pValueD, pSecondValue, pOnlyCard, pType)
+    public BlueCard(CardData pData) : base(pData)
     {
-        valueDice = pValueD;
-        secondValueDice = pSecondValue;
-        valueMoney = pValueM;
-        nameCard = pName;
-        onlyCard = pOnlyCard;
-        type = pType;
-    }
-
-    void Start()
-    {
-
+        data = pData;
     }
 
     // Update is called once per frame
@@ -29,29 +19,29 @@ public class BlueCard : Card
     {
         if (type == typeCard.wheat)
         {
-            if (nameCard == "Champs de blé")
+            if (data.nameCard == "Champs de blé")
             {
                 owner.money++;
             }
-            if (nameCard == "Verger")
+            if (data.nameCard == "Verger")
             {
                 owner.money += 3;
             }
         }
         else if (type == typeCard.animal)
         {
-            if (nameCard == "Ferme")
+            if (data.nameCard == "Ferme")
             {
                 owner.money++;
             }
         }
         else if (type == typeCard.industry)
         {
-            if (nameCard == "Forêt")
+            if (data.nameCard == "Forêt")
             {
                 owner.money++;
             }
-            if (nameCard == "Mine")
+            if (data.nameCard == "Mine")
             {
                 owner.money += 5;
             }

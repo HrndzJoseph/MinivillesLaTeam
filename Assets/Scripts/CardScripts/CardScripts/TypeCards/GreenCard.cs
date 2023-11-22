@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class GreenCard : Card
 {
-    public GreenCard(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType) : base(pName, pValueM, pValueD, pSecondValue, pOnlyCard, pType)
+    public GreenCard(CardData pData) : base(pData)
     {
-        valueDice = pValueD;
-        secondValueDice = pSecondValue;
-        valueMoney = pValueM;
-        nameCard = pName;
-        onlyCard = pOnlyCard;
-        type = pType;
+        data = pData;
     }
     void Start()
     {
@@ -28,32 +23,32 @@ public class GreenCard : Card
     {
         if (type == typeCard.shop)
         {
-            if (nameCard == "Boulangerie")
+            if (data.nameCard == "Boulangerie")
             {
                 owner.money++;
             }
-            if (nameCard == "Supérette")
+            if (data.nameCard == "Supérette")
             {
                 owner.money += 3;
             }
         }
         else if (type == typeCard.factory)
         {
-            if (nameCard == "Fromagerie")
+            if (data.nameCard == "Fromagerie")
             {
                 foreach (Card card in owner.cardObtained)
                 {
-                    if (card.type == typeCard.animal)
+                    if (type == typeCard.animal)
                     {
                         owner.money += 3;
                     }
                 }
             }
-            if (nameCard == "Fabrique de meubles")
+            if (data.nameCard == "Fabrique de meubles")
             {
                 foreach (Card card in owner.cardObtained)
                 {
-                    if (card.type == typeCard.industry)
+                    if (type == typeCard.industry)
                     {
                         owner.money += 3;
                     }
@@ -62,11 +57,11 @@ public class GreenCard : Card
         }
         else if (type == typeCard.fruits)
         {
-            if (nameCard == "Marché de fruits et légumes")
+            if (data.nameCard == "Marché de fruits et légumes")
             {
                 foreach (Card card in owner.cardObtained)
                 {
-                    if (card.type == typeCard.wheat)
+                    if (type == typeCard.wheat)
                     {
                         owner.money += 2;
                     }
