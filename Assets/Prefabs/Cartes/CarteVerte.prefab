@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2012881549150741519}
   - component: {fileID: -5562415524385477392}
   m_Layer: 5
-  m_Name: Champs de ble
+  m_Name: CarteVerte
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,14 +60,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD:Assets/Prefabs/Cartes/Ferme.prefab
+<<<<<<< Updated upstream:Assets/Prefabs/Cartes/Ferme.prefab
   m_Color: {r: 0.9748427, g: 0.9748427, b: 0.9748427, a: 1}
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> Stashed changes:Assets/Prefabs/Cartes/Normal/Ferme.prefab
+=======
+  m_Color: {r: 0.36718702, g: 0.9137255, b: 0.18823527, a: 1}
+>>>>>>> parent of 8809cb2 (UIUpdate10):Assets/Prefabs/Cartes/CarteVerte.prefab
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD:Assets/Prefabs/Cartes/Ferme.prefab
+<<<<<<< Updated upstream:Assets/Prefabs/Cartes/Ferme.prefab
   m_Sprite: {fileID: 21300000, guid: 9101aaba132f5a040bed8e8c8ed4abe3, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 37d47ad8a55c8fe4dac71f75379d9054, type: 3}
+>>>>>>> Stashed changes:Assets/Prefabs/Cartes/Normal/Ferme.prefab
+=======
+  m_Sprite: {fileID: 21300000, guid: d0d2aa21314f3fd4aa45b5c977628c3a, type: 3}
+>>>>>>> parent of 8809cb2 (UIUpdate10):Assets/Prefabs/Cartes/CarteVerte.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -116,4 +132,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpiled: 0
-  cardId: 0
+  cardId: 1
