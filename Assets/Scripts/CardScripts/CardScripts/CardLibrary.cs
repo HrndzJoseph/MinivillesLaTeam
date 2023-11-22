@@ -59,7 +59,7 @@ public class CardLibrary : MonoBehaviour
         marcheDeFruitsEtLegumes = new GreenCard(GetInstance().cards[14], Card.typeCard.wheat);
         
     }
-    //
+    
 
     /*cards.Add(Instantiate(new BlueCard("Champs de blé", 1, 1, 0, false, Card.typeCard.wheat)));
     cards.Add(Instantiate(ferme));
