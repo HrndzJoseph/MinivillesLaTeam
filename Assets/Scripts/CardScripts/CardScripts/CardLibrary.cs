@@ -5,7 +5,19 @@ using UnityEngine;
 
 public class CardLibrary : MonoBehaviour
 {
-    [SerializeField] public List<GameObject> cards = new List<GameObject>();
+    #region SINGLETON INSTANCE
+    static private CardLibrary instance;
+
+    static public CardLibrary GetInstance()
+    {
+        if (instance == null) instance = new CardLibrary();
+        return instance;
+    }
+
+    private CardLibrary() : base() { }
+    #endregion
+
+    public List<CardData> cards = new List<CardData>();
 
     private void Start()
     {
@@ -14,23 +26,21 @@ public class CardLibrary : MonoBehaviour
 
     void Init()
     {
-        Debug.Log("gros caca");
-
-        //Card champsDeBle = new BlueCard("Champs de blé", 1, 1, 0, false, Card.typeCard.wheat);
-        //Card ferme = new BlueCard("Ferme", 1, 2, 0, false, Card.typeCard.animal);
-        //Card boulangerie = new GreenCard("Boulangerie", 1, 2, 3, false, Card.typeCard.shop);
-        //Card cafe = new RedCard("Café", 2, 3, 0, false, Card.typeCard.coffee);
-        //Card superette = new GreenCard("Supérette", 2, 4, 0, false, Card.typeCard.shop);
-        //Card foret = new BlueCard("Forêt", 3, 5, 0, false, Card.typeCard.industry);
-        //Card stade = new PurpleCard("Stade", 6, 6, 0, true, Card.typeCard.business);
-        //Card centreDAffaire = new PurpleCard("Centre d'affaires", 8, 6, 0, true, Card.typeCard.business);
-        //Card chaineDeTelevision = new PurpleCard("Chaîne de télévision", 7, 6, 0, true, Card.typeCard.business);
-        //Card fromagerie = new GreenCard("Fromagerie", 5, 7, 0, false, Card.typeCard.factory);
-        //Card fabriqueDeMeubles = new GreenCard("Fabrique de meubles", 3, 8, 0, false, Card.typeCard.factory);
-        //Card mine = new BlueCard("Mine", 6, 9, 0, false, Card.typeCard.industry);
-        //Card restaurant = new RedCard("Restaurant", 3, 9, 10, false, Card.typeCard.coffee);
-        //Card verger = new BlueCard("Verger", 3, 10, 0, false, Card.typeCard.wheat);
-        //Card marcheDeFruitsEtLegumes = new GreenCard("Marché de fruits et légumes", 2, 11, 12, false, Card.typeCard.wheat);
+        public Card champsDeBle = new BlueCard(GetInstance().cards[0], Card.typeCard.wheat);
+        public Card ferme = new BlueCard(GetInstance().cards[1], Card.typeCard.animal);
+        public Card boulangerie = new GreenCard(GetInstance().cards[2], Card.typeCard.shop);
+        public Card cafe = new RedCard(GetInstance().cards[3], Card.typeCard.coffee);
+        public Card superette = new GreenCard(GetInstance().cards[4], Card.typeCard.shop);
+        public Card foret = new BlueCard(GetInstance().cards[5], Card.typeCard.industry);
+        public Card stade = new PurpleCard(GetInstance().cards[6], Card.typeCard.business);
+        public Card centreDAffaire = new PurpleCard(GetInstance().cards[7], Card.typeCard.business);
+        public Card chaineDeTelevision = new PurpleCard(GetInstance().cards[8], Card.typeCard.business);
+        public Card fromagerie = new GreenCard(GetInstance().cards[9], Card.typeCard.factory);
+        public Card fabriqueDeMeubles = new GreenCard(GetInstance().cards[10], Card.typeCard.factory);
+        public Card mine = new BlueCard(GetInstance().cards[11], Card.typeCard.industry);
+        public Card restaurant = new RedCard(GetInstance().cards[12], Card.typeCard.coffee);
+        public Card verger = new BlueCard(GetInstance().cards[13], Card.typeCard.wheat);
+        public Card marcheDeFruitsEtLegumes = new GreenCard(GetInstance().cards[14], Card.typeCard.wheat);
         
         
         /*cards.Add(Instantiate(new BlueCard("Champs de blé", 1, 1, 0, false, Card.typeCard.wheat)));
@@ -65,7 +75,6 @@ public class CardLibrary : MonoBehaviour
         //cards.Add(new RedCard("Restaurant", 3, 9, 10, false, Card.typeCard.coffee));
         //cards.Add(new BlueCard("Verger", 3, 10, 0, false, Card.typeCard.wheat));
         //cards.Add(new GreenCard("Marché de fruits et légumes", 2, 11, 12, false, Card.typeCard.wheat));
-    }
 }
 
 //[System.Serializable]

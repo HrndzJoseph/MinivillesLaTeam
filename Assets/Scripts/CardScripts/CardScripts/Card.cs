@@ -5,9 +5,10 @@ using UnityEngine.UIElements;
 
 public class Card : MonoBehaviour 
     {
-    public Card(CardData pData)
+    public Card(CardData pData, typeCard pType)
     {
         data = pData;
+        type = pType;
     }
 
     protected CardData data;

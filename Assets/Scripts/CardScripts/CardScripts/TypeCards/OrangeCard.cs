@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class OrangeCard : Card
 {
-    public OrangeCard(CardData pData) : base(pData)
+    public OrangeCard(CardData pData, typeCard pType) : base(pData, pType)
     {
         data = pData;
+        type = pType;
     }
 
     bool obtained;

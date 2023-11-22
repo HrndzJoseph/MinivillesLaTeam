@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PurpleCard : Card
 {
-    public PurpleCard(CardData pData) : base(pData)
+    public PurpleCard(CardData pData, typeCard pType) : base(pData, pType)
     {
         data = pData;
+        type = pType;
     }
     void Start()
     {
@@ -39,7 +40,7 @@ public class PurpleCard : Card
         {
 
         }
-        if (data.nameCard == "Chaîne de télévision")
+        if (data.nameCard == "Chaine de télévision")
         {
 
         }
