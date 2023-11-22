@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 
+[CreateAssetMenu(fileName = "New card", menuName = "Card")]
 public class Card : ScriptableObject
 {
     public Card(string pName, int pValueM, int pValueD, int pSecondValue, bool pOnlyCard, typeCard pType)
