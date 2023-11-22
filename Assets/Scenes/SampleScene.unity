@@ -1564,7 +1564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 269.01}
+  m_AnchoredPosition: {x: 0, y: 269}
   m_SizeDelta: {x: 2032, y: 538.2888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &797860049
@@ -3199,7 +3199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1879969751}
-  - component: {fileID: 1879969750}
+  - component: {fileID: 1879969752}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3207,18 +3207,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1879969750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879969749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b609c6f067351634896f6bf781c5bc66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1879969751
 Transform:
   m_ObjectHideFlags: 0
@@ -3234,6 +3222,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1879969752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879969749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7fc6b686028e64fbbbc53a6bfbc09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numPlayers: 2
+  playerList: []
+  activePlayer: {fileID: 0}
+  turn: 0
 --- !u!1001 &1891287219
 PrefabInstance:
   m_ObjectHideFlags: 0
