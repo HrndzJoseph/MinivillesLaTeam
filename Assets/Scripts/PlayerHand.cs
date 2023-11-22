@@ -7,7 +7,6 @@ using UnityEngine;
 public class PlayerHand : MonoBehaviour
 {
     private Transform handParent;
-    bool isBuyed = false;
     [SerializeField] private List<CardStocker> cartes = new List<CardStocker>();
 
 
