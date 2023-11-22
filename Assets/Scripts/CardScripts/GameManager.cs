@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void PrepareGame()
+    private void InitGame()
     {
         for (int i = 0; i < numPlayers; i++)
         {
