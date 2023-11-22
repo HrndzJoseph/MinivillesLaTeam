@@ -14,7 +14,11 @@ GameObject:
   - component: {fileID: 2012881549150741519}
   - component: {fileID: -5562415524385477392}
   m_Layer: 5
+<<<<<<<< HEAD:Assets/Prefabs/Cartes/Gare.prefab
   m_Name: Gare
+========
+  m_Name: CarteRouge
+>>>>>>>> parent of 8809cb2 (UIUpdate10):Assets/Prefabs/Cartes/CarteRouge.prefab
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,14 +64,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<<< HEAD:Assets/Prefabs/Cartes/Gare.prefab
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+========
+  m_Color: {r: 0.9150943, g: 0.3268044, b: 0.18704751, a: 1}
+>>>>>>>> parent of 8809cb2 (UIUpdate10):Assets/Prefabs/Cartes/CarteRouge.prefab
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<<< HEAD:Assets/Prefabs/Cartes/Gare.prefab
   m_Sprite: {fileID: 21300000, guid: 907f4a9e341a2d74c888dc93febf4bc3, type: 3}
+========
+  m_Sprite: {fileID: 21300000, guid: d0d2aa21314f3fd4aa45b5c977628c3a, type: 3}
+>>>>>>>> parent of 8809cb2 (UIUpdate10):Assets/Prefabs/Cartes/CarteRouge.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -115,5 +127,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921d6c93052cf6d4e872c4b239fdc4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEmpiled: 0
-  cardId: 0

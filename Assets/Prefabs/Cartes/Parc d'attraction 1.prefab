@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2012881549150741519}
   - component: {fileID: -5562415524385477392}
   m_Layer: 5
-  m_Name: Parc d'attraction
+  m_Name: Parc d'attraction 1
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
